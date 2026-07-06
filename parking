@@ -8,7 +8,7 @@ class Main {
         if(a<=2){
             cost=(a*20);
         }
-        else if (a<=3){
+        else if (a<=5){
             cost=40+((a-2)*15);
         }
         else{
