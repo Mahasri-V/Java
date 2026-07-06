@@ -1,0 +1,27 @@
+import java.util.Scanner;
+
+class Main {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int a = sc.nextInt();
+        int[] arr = {500, 200, 100, 50, 20, 10};
+        int value;
+        int balance;
+        int temp = a;
+        for (int i = 0; i < arr.length; i++) {
+            if (temp >= arr[i]) {
+                value = temp / arr[i];
+                balance = temp % arr[i];
+                System.out.println(arr[i] + " : " + value);
+                temp = balance; 
+            }
+            else{
+                System.out.println(arr[i]+" : "+0);
+            }
+        }
+        if (temp > 0) {
+            System.out.println("Remaining amount: " + temp);
+        }
+        sc.close();
+    }
+}
