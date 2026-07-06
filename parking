@@ -1,0 +1,20 @@
+
+import java.util.Scanner;
+class Main {
+    public static void main(String[] args){
+        Scanner sc=new Scanner (System.in);
+        int a=sc.nextInt();
+        int cost=0;
+        if(a<=2){
+            cost=(a*20);
+        }
+        else if (a<=3){
+            cost=40+((a-2)*15);
+        }
+        else{
+            cost=40+45+((a-5)*10);
+        }System.out.println(cost);    
+    }
+    
+    
+}
